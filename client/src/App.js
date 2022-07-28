@@ -43,7 +43,7 @@ const client = new ApolloClient({
   cache: new InMemoryCache(),
 });
 
-// App Component
+// App Component - Root of Client App
 
 function App() {
   
