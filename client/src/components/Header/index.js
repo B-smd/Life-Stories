@@ -21,6 +21,9 @@ const Header = () => {
                 <div>
                     {Auth.loggedIn() ? (
                         <>
+                            <Link className="btn btn-lg btn-info m-2" to="/">Welcome</Link>
+                            <Link className="btn btn-lg btn-info m-2" to="home">Home</Link>
+                            <Link className="btn btn-lg btn-info m-2" to="donate">Donate</Link>
                             <Link className="btn btn-lg btn-info m-2" to="/me">
                                 {Auth.getProfile().data.username}'s profile
                             </Link>
@@ -30,6 +33,7 @@ const Header = () => {
                         </>
                     ) : (
                         <>
+                            <Link to="/">Welcome</Link>
                             <Link className="btn btn-lg btn-info m-2" to="/login">
                                 Login
                             </Link>
