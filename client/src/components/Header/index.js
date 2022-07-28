@@ -17,13 +17,14 @@ const Header = () => {
                         <h1 className="m-0">Story Sharing</h1>
                     </Link>
                 <p className="m-0">Share your story ...</p>
+                    <Link style={{"margin": "auto"}} to="/"><img src="https://img.icons8.com/color/48/000000/laptop--v1.png" alt="Github" className="icon" width={"56"}/></Link>
+                    <Link style={{"margin": "auto"}} to="home"><img src="https://img.icons8.com/fluent/48/000000/home--v1.png" alt="Twitter" className="icon" width={"56"}/></Link>
+                    <Link style={{"margin": "auto"}} to="donate"><img src="https://img.icons8.com/color/48/000000/donate.png" alt="LinkedIn" className="icon" width= "56" /></Link>
+
                 </div>
                 <div>
                     {Auth.loggedIn() ? (
                         <>
-                            <Link className="btn btn-lg btn-info m-2" to="/">Welcome</Link>
-                            <Link className="btn btn-lg btn-info m-2" to="home">Home</Link>
-                            <Link className="btn btn-lg btn-info m-2" to="donate">Donate</Link>
                             <Link className="btn btn-lg btn-info m-2" to="/me">
                                 {Auth.getProfile().data.username}'s profile
                             </Link>
@@ -33,7 +34,6 @@ const Header = () => {
                         </>
                     ) : (
                         <>
-                            <Link to="/">Welcome</Link>
                             <Link className="btn btn-lg btn-info m-2" to="/login">
                                 Login
                             </Link>
