@@ -41,7 +41,7 @@ const CommentForm = ({ storyId, refetchStory }) => {
 
   return (
     <div>
-      <h4>What are your thoughts on this story?</h4>
+      <h4 >What are your thoughts on this story?</h4>
 
       {Auth.loggedIn() ? (
         <>

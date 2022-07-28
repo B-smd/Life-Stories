@@ -92,22 +92,22 @@ ul {
   font-style: normal;
 
 }
-h3 {
+h3,
+h4 {
   color: lightblue;
 }
 p,
 ul {
-  color:#065b83;
+  color:#347c9e;
 }
 #navlinks {
   background-color: black;
   display: flex;
   justify-content: space-around;
 }
-div.container {
+header {
   background-color: black;
 }
-
 div.flex-column.justify-flex-start.min-100-vh {
   background-color: black;
 }
@@ -136,13 +136,17 @@ div.flex-column.justify-flex-start.min-100-vh {
   border-width: 5px;
   border-style: solid;
   border-radius: 50%;
-  top: 20%;
+  top: 15%;
   left: 30%;
 }
   
 ul {
   width: 35%;
   padding-left: 7px;;
+}
+img:hover {
+  transform: scale(1.4);
+  transition-duration: 0.5s
 }
 
 /**
@@ -436,16 +440,6 @@ body {
   color: #1a1a1a;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: 'JetBrains Mono', monospace;
-  margin: 0 0 0.5rem;
-  line-height: 1.25;
-}
 
 h1 {
   font-size: 2.25rem;
