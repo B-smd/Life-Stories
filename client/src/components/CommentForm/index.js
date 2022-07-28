@@ -6,7 +6,7 @@ import { ADD_COMMENT } from '../../utils/mutations';
 
 import Auth from '../../utils/auth';
 
-const CommentForm = ({ storyId }) => {
+const CommentForm = ({ storyId, refetchStory }) => {
   const [commentText, setCommentText] = useState('');
   const [characterCount, setCharacterCount] = useState(0);
 
@@ -23,7 +23,7 @@ const CommentForm = ({ storyId }) => {
           commentAuthor: Auth.getProfile().data.username,
         },
       });
-
+      refetchStory();
       setCommentText('');
     } catch (err) {
       console.error(err);

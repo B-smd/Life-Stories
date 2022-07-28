@@ -25,7 +25,7 @@ const Footer = () => {
             >
               ❤️
             </span>{' '}
-            by Life Stories Sharing team.
+            by Life Stories team.
           </h4>
         </div>
       </footer>

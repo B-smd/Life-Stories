@@ -66,7 +66,7 @@ const resolvers = {
         addComment: async ( parent, { storyId, commentText }, context ) => {
             if ( context.user) {
                 return Story.findOneAndUpdate(
-                    { _id, storyId },
+                    { _id: storyId },
                     {
                         $addToSet: {
                             comments: {

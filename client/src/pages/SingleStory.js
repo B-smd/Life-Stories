@@ -13,7 +13,7 @@ const SingleStory = () => {
   // Use `useParams()` to retrieve value of the route parameter `:profileId`
   const { storyId } = useParams();
 
-  const { loading, data } = useQuery(QUERY_SINGLE_STORY, {
+  const { loading, data, refetch } = useQuery(QUERY_SINGLE_STORY, {
     // pass URL parameter
     variables: { storyId: storyId },
   });
@@ -49,7 +49,7 @@ const SingleStory = () => {
         <CommentList comments={story.comments} />
       </div>
       <div className="m-3 p-4" style={{ border: '1px dotted #1a1a1a' }}>
-        <CommentForm storyId={storyId} />
+        <CommentForm refetchStory={refetch} storyId={storyId} />
       </div>
     </div>
   );

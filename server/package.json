@@ -1,5 +1,5 @@
 {
-  "name": "a-new-project",
+  "name": "life-stories",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,14 +11,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/B-smd/A-new-project.git"
+    "url": "git+https://github.com/B-smd/Life-Stories.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/B-smd/A-new-project/issues"
+    "url": "https://github.com/B-smd/Life-Stories/issues"
   },
-  "homepage": "https://github.com/B-smd/A-new-project#readme",
+  "homepage": "https://github.com/B-smd/Life-Stories#readme",
   "dependencies": {
     "apollo-server-core": "^3.10.0",
     "apollo-server-express": "^3.10.0",

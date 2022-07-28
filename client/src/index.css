@@ -57,7 +57,13 @@ hr {
  * 2. Correct the odd `em` font sizing in all browsers.
  */
 pre {
-  font-family: monospace, monospace;
+  font-family: rieven-uncial, sans-serif;
+
+  font-weight: 400;
+  
+  font-style: normal;
+
+  /* font-family: monospace, monospace; */
   /* 1 */
   font-size: 1em;
   /* 2 */
@@ -70,6 +76,67 @@ pre {
  */
 a {
   background-color: transparent;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul {
+  font-family: rieven-uncial, sans-serif;
+
+  font-weight: 400;
+  
+  font-style: normal;
+
+}
+h3 {
+  color: lightblue;
+}
+p,
+ul {
+  color:#065b83;
+}
+#navlinks {
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
+}
+div.container {
+  background-color: black;
+}
+
+div.flex-column.justify-flex-start.min-100-vh {
+  background-color: black;
+}
+
+#hero img {
+  max-width: 100%;
+  border-radius: 50%;
+  display: block;
+  border-style: solid;
+  color: dodgerblue;
+}
+#hero p {
+  width: 25%;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  position: absolute;
+  color: cyan;
+  border-width: 5px;
+  border-style: solid;
+  border-radius: 50%;
+  top: 43%;
+  left: 38%;
+}
+  
+ul {
+  width: 35%;
+  padding-left: 7px;;
 }
 
 /**
