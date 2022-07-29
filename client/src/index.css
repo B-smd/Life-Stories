@@ -139,7 +139,9 @@ div.flex-column.justify-flex-start.min-100-vh {
   top: 15%;
   left: 30%;
 }
-  
+nav.displayed {
+  width: 86%;
+}  
 ul {
   width: 35%;
   padding-left: 7px;;
@@ -148,7 +150,44 @@ img:hover {
   transform: scale(1.4);
   transition-duration: 0.5s
 }
+* {
+  box-sizing: border-box;
+}
 
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding:  0 10px;
+}
+
+/* Remove extra left and right margins, due to padding in columns */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the colums */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the counter cards */
+.card1 {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2); /* this adds the "card" effect */
+  padding: 30px;
+  text-align: center;
+  background-color: black;
+}
+
+/* Responsive colums - one column layout (vertical) on small screens */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+/* } */
 /**
  * 1. Remove the bottom border in Chrome 57-
  * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.

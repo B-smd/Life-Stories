@@ -15,19 +15,7 @@ const Footer = () => {
               &larr; Go Back
             </button>
           )}
-          {/* <h4>
-            Made with{' '}
-            <span
-              className="emoji"
-              role="img"
-              aria-label="heart"
-              aria-hidden="false"
-            >
-              ❤️
-            </span>{' '}
-            by Life Stories team.
-          </h4> */}
-              <nav className="container-fluid navbar navbar-expand-sm justify-content-center">
+      <nav className="container-fluid navbar navbar-expand-sm justify-content-center">
       <div className="flex justify-content-center" >
         <a href="mailto:djaja@iinet.net.au?subject=message" style={{"margin": "aouto"}}><img src="https://img.icons8.com/fluent/48/000000/mail--v1.png" alt="Mail" className="icon" width={"56"}/></a>
         <a href="https://github.com/B-smd" style={{"margin": "auto"}}><img src="https://img.icons8.com/color/48/000000/github--v1.png" alt="Github" className="icon" width={"56"}/></a>

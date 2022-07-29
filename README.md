@@ -61,6 +61,7 @@ THEN I am presented with icon links to the developer’s Email, GitHub , Twitter
 
 ## Demo
 
+- Link : [Presentation](https://www.canva.com/design/DAFE_TDIbc0/NLUz9KVV3E2cmTDBu4wjSQ/view?utm_content=DAFE_TDIbc0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 - Link demo: [Heroku](https://life-stories-bambang.herokuapp.com/)
 - Link : [Github](https://github.com/B-smd/Life-Stories.git)
 
