@@ -70,7 +70,7 @@ THEN I am presented with icon links to the developer’s Email, GitHub , Twitter
 
 - [Simon-Xu-Lan](https://github.com/Simon-Xu-Lan)
 - [Sam-Ngu](https://github.com/sam-ngu)
-
+- [Chee-Tai](https://github.com/cupacheeno)
 
 ## License
     This application is covered by the MIT license.
