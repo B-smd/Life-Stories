@@ -65,6 +65,14 @@ THEN I am presented with icon links to the developer’s Email, GitHub , Twitter
 - Link demo: [Heroku](https://life-stories-bambang.herokuapp.com/)
 - Link : [Github](https://github.com/B-smd/Life-Stories.git)
 
+![LIVE-STORIES](./Demo/ScreenShot.png)
+![LIVE-STORIES](./Demo/ScreenShot1.png)
+![LIVE-STORIES](./Demo/ScreenShot2.png)
+![LIVE-STORIES](./Demo/ScreenShot3.png)
+![LIVE-STORIES](./Demo/ScreenShot4.png)
+![LIVE-STORIES](./Demo/ScreenShot5.png)
+![LIVE-STORIES](./Demo/ScreenShot6.png)
+![LIVE-STORIES](./Demo/ScreenShot7.png)
 
 ## Credits
 

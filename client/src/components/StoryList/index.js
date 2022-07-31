@@ -84,9 +84,8 @@ const StoryList = ({
                                                 </span>
                                             </Link>
                                             <br/>
-                                            <br/>
                                             <button onClick={() => deleteStory(story)}>
-                                            <img src="https://img.icons8.com/fluent/48/000000/cancel--v1.png" alt="Delete" className="icon" width={"56"}/>
+                                            <img src="https://img.icons8.com/fluent/48/000000/cancel--v1.png" alt="Delete" className="icon" width={"24"}/>
                                             </button>
                                             <button onClick={() => handleUpdateBtn(story._id, story.storyText)}>Update</button>
                                         </>
