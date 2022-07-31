@@ -50,6 +50,7 @@ const resolvers = {
         },
         addStory: async ( parent, { storyText }, context ) => {
             if (context.user) {
+                
                 const story = await Story.create({
                     storyText,
                     storyAuthor: context.user.username,
@@ -119,6 +120,21 @@ const resolvers = {
 
             throw new AuthenticationError('You need to be logged in!')
         },
+        updateStory: async ( parent, {storyId, storyText}, context ) => {
+            if (context.user) {
+                const story = await Story.findOneAndUpdate(
+                    {_id: storyId },
+                    {$set: {storyText: storyText}},
+                    {
+                        new: true,
+                        runValidators: true
+                    }
+
+                );
+                return story;
+            }
+            throw new AuthenticationError('You need to be logged in!')
+        }
 
     },
 };

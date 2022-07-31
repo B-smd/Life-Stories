@@ -7,7 +7,7 @@ import StoryForm from '../components/StoryForm';
 import { QUERY_STORIES } from '../utils/queries';
 
 const Home = () => {
-    const { loading, data } = useQuery(QUERY_STORIES);
+    const { loading, data, refetch } = useQuery(QUERY_STORIES);
 
     const stories = data?.stories || [];
   
@@ -26,6 +26,7 @@ const Home = () => {
             ) : (
               <StoryList
                 stories={stories}
+                refetchStories={refetch}
                 title="Some Feed for Story(s)..."
               />
             )}

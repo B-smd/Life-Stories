@@ -38,7 +38,7 @@ const StoryForm = () => {
     event.preventDefault();
 
     try {
-      const { data } = await addStory({
+      await addStory({
         variables: {
           storyText,
           storyAuthor: Auth.getProfile().data.username,

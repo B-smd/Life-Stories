@@ -39,6 +39,8 @@ const typeDefs = gql`
         addComment(storyId: ID!, commentText: String!): Story
         removeStory(storyId: ID!): Story
         removeComment(storyId: ID!): Story
+        updateStory(storyId: ID!, storyText: String!):Story
+        updateComment(storyID: ID!, commentText: String!): Story
     }
 `;
 
