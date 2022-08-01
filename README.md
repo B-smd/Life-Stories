@@ -4,7 +4,7 @@
 
 ## Description
 
-The Life Story app, people can view and read the stories. If they want to create a story they need to sign up and login, so they as user can create a story and give comment. I build this app using MongoDB as a backend and use Graphql to stores and fetches data from MongoDB atlas and connecting react.js as a frontend with the help of Apollo client. For the authentication I used JWT to create a token, a very strong and secure password. For the welcome page I use tsparticles as an animation backgroung to make the page dynamic.
+The Life Story app, people can view and read the stories. If they want to create a story they need to sign up and login, so they as user can create a story and give comment. I build this app using MongoDB as a backend and use Graphql to stores and fetches data from MongoDB atlas and connecting react.js as a frontend with the help of Apollo client. For the authentication I used JWT to create a token, a very strong and secure password. For the welcome page I use tsparticles as an animation backgroung to make the page dynamic. I have deployed this app to Heroku.
 
 ## Table of Contents (Optional)
 
