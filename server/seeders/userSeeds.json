@@ -1,6 +1,6 @@
 [
   {
-    "username": "Daniel Peter",
+    "username": "Life Stories",
     "email": "daniel.peter@gmail.com",
     "password": "password01"
   },
@@ -13,30 +13,5 @@
     "username": "Megan Pham",
     "email": "megan.pham@gmail.com",
     "password": "password03"
-  },
-  {
-    "username": "Alan Kay",
-    "email": "alan.key@gmail.com",
-    "password": "password04"
-  },
-  {
-    "username": "C.A.R. Hoare",
-    "email": "car.hoared@gmail.com",
-    "password": "password05"
-  },
-  {
-    "username": "David Thomas",
-    "email": "david.thomas@gmail.com",
-    "password": "password06"
-  },
-  {
-    "username": "Donald Knuth",
-    "email": "dknuth@gmail.com",
-    "password": "password09"
-  },
-  {
-    "username": "Lernantino",
-    "email": "lernantino@gmail.com",
-    "password": "password10"
   }
 ]
