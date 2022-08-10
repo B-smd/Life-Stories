@@ -19,18 +19,22 @@ const StoryForm = () => {
 
         cache.writeQuery({
           query: QUERY_STORIES,
-          data: { stories: [addStory, ...stories] },
+          data: { stories: [ ...stories, addStory] },
         });
       } catch (e) {
         console.error(e);
       }
 
       // update me object's cache
-      const { me } = cache.readQuery({ query: QUERY_ME });
-      cache.writeQuery({
-        query: QUERY_ME,
-        data: { me: { ...me, stories: [...me.stories, addStory] } },
-      });
+      const queryMe = cache.readQuery({ query: QUERY_ME });
+      
+      if(queryMe){
+
+        cache.writeQuery({
+          query: QUERY_ME,
+          data: { me: { ...queryMe.me, stories: [...queryMe.me.stories, addStory] } },
+        });
+      }
     },
   });
 
@@ -46,6 +50,7 @@ const StoryForm = () => {
       });
 
       setStoryText('');
+      // TODO: refetch stories
     } catch (err) {
       console.error(err);
     }

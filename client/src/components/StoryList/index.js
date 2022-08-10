@@ -1,6 +1,7 @@
 import { useMutation } from '@apollo/client';
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import auth from '../../utils/auth';
 import { REMOVE_STORY, UPDATE_STORY } from '../../utils/mutations';
 
 const StoryList = ({
@@ -12,6 +13,10 @@ const StoryList = ({
 }) => {
     const [updateStoryIdState, setUpdateStoryIdState] = useState('');
     const [textState, setTextState] = useState('');
+
+    const currentUser = auth.getProfile();
+    console.log(currentUser);
+    
 
     // import delete story hook
     const [removeStory, {loading}] = useMutation(REMOVE_STORY);
@@ -84,10 +89,19 @@ const StoryList = ({
                                                 </span>
                                             </Link>
                                             <br/>
-                                            <button onClick={() => deleteStory(story)}>
-                                            <img src="https://img.icons8.com/fluent/48/000000/cancel--v1.png" alt="Delete" className="icon" width={"24"}/>
-                                            </button>
-                                            <button onClick={() => handleUpdateBtn(story._id, story.storyText)}>Update</button>
+
+                                            {currentUser?.data.username === story.storyAuthor && (
+                                                <>
+                                                
+                                                    <button onClick={() => deleteStory(story)}>
+                                                    <img src="https://img.icons8.com/fluent/48/000000/cancel--v1.png" alt="Delete" className="icon" width={"24"}/>
+                                                    </button>
+
+                                                    <button onClick={() => handleUpdateBtn(story._id, story.storyText)}>Update</button>
+                                                
+                                                </>
+                                            )}
+
                                         </>
                                     ):(
                                         <>
@@ -153,6 +167,7 @@ const StoryList = ({
                                 </div>
 
                                 <div className="col-12 col-lg-3">
+
                                 <button className="btn btn-primary btn-block py-3" type="submit">
                                     Update Story
                                 </button>
