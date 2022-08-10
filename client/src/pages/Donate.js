@@ -1,5 +1,6 @@
 import React from 'react';
 
+// Donation
 const Donate = () => {
     return (
         <div className="row">
