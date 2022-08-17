@@ -14,9 +14,12 @@ const StoryList = ({
     const [updateStoryIdState, setUpdateStoryIdState] = useState('');
     const [textState, setTextState] = useState('');
 
-    const currentUser = auth.getProfile();
-    console.log(currentUser);
-    
+    let currentUser = null;
+    try{
+        currentUser = auth.getProfile();
+    }catch(err){
+        console.log(err)
+    }
 
     // import delete story hook
     const [removeStory, {loading}] = useMutation(REMOVE_STORY);

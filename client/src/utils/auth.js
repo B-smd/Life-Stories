@@ -34,9 +34,10 @@ class AuthService {
 
   logout() {
     localStorage.removeItem('id_token');
-    let position = window.location.href.lastIndexOf('/')
-    let href=window.location.href.slice(0, position)
-    window.open(href)
+    window.location.href = '/';
+    // let position = window.location.href.lastIndexOf('/')
+    // let href=window.location.href.slice(0, position)
+    // window.open(href)
   }
 }
 
