@@ -199,7 +199,7 @@ div.card1 a img {
     margin-bottom: 20px;
   }
 }
-@media screen and (max-width: 600px) {
+/* @media screen and (max-width: 600px) {
   div.row.card1 a img{
     max-width: 100%;
     flex-direction: column;
@@ -207,8 +207,38 @@ div.card1 a img {
     padding: 30px;
     margin-bottom: 20px;
   }
+} */
+@media screen and (max-width: 390px) {
+  div.container {
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    padding: 1rem;
+    margin: auto;
+  }
 }
-
+@media screen and (max-width: 390px) {
+  div.row {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    padding: auto;
+    margin: auto;
+  }
+}
+@media screen and (min-width: 360px) {
+  div.card1 {
+    justify-content: center;
+    align-items: center;
+    max-width: 100%;
+    flex-direction: column;
+    display: flex;
+    padding: auto;
+    margin: auto;
+  }
+}
 /* } */
 /**
  * 1. Remove the bottom border in Chrome 57-
