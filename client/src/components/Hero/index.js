@@ -100,8 +100,8 @@ const Hero = () => {
                 <h5 className="text-center" style= {{color: "aliceblue", width: "80%", margin: "auto"}}>Sharing your life stories to help others 
                 that are struggling to move on and lead a positive future. Every story
                 is shared to make others feel united and strengthened</h5>
-            </div>
                 <h1 className="text-center" style={{ color: "cyan"}}>Welcome</h1>
+            </div>
         </div>
     )
 }
