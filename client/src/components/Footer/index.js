@@ -19,7 +19,7 @@ const Footer = () => {
       <div className="flex justify-content-center" >
         <a href="mailto:djaja@iinet.net.au?subject=message" style={{"margin": "aouto"}}><img src="https://img.icons8.com/fluent/48/000000/mail--v1.png" alt="Mail" className="icon" width={"56"}/></a>
         <a href="https://github.com/B-smd" style={{"margin": "auto"}}><img src="https://img.icons8.com/color/48/000000/github--v1.png" alt="Github" className="icon" width={"56"}/></a>
-        <a href="https://twitter.com/johndjaja" style={{"margin": "auto"}}><img src="https://img.icons8.com/fluent/48/000000/twitter--v1.png" alt="Twitter" className="icon" width={"56"}/></a>
+        <a href="https://twitter.com/michadjaja" style={{"margin": "auto"}}><img src="https://img.icons8.com/fluent/48/000000/twitter--v1.png" alt="Twitter" className="icon" width={"56"}/></a>
         <a href="https://www.linkedin.com/in/bambang-sugiarto-micha-djaja-53ba8b6b" style={{"margin": "auto"}}><img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn" className="icon" width= "56" /></a>
       </div>
     </nav>
